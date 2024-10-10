@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> 
+	LIVE A LITTLE 
+	</title>
+	<link rel="Shortcut Icon" type="image/png" href="Image/logo.jpeg">
+	<link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<style>
+
+*{
+    font-family: 'PT Serif', serif;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+   flex-grow: 1;
+   background-color: #191919 ; 
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+.container{
+width: 90%;
+margin: 0 auto;
+padding: 10px 20px;
+    
+}
+.about{
+	width: 100%;
+    display:flex;
+    justify-content: space-between;
+	padding: 78px 0px;
+	background-color: #191919 ;
+}
+.about img{
+	height: 150px;
+	width:150px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+   width: 1130px;
+   max-width: 95%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around; 
+}
+.about-text h1{
+   color: white;
+   font-size: 80px;
+   text-transform: capitalize;
+   margin-bottom: 20px;
+}
+.about-text h5{
+   color: white;
+   font-size: 25px;
+   text-transform: capitalize;
+   margin-bottom: 25px;
+   letter-spacing: 2px;
+}
+
+.about-text p{
+   color: #919090;
+   letter-spacing: 1px;
+   line-height: 28px;
+   font-size: 18px;
+   margin-bottom: 45px;
+}
+
+button{
+   background: #573e3d; 
+   color: white;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 8px 33px;
+   border-radius: 30px;
+   transition: .4s;
+}
+button:hover{
+	background: transparent;
+	border: 2px solid #332524;
+	cursor: pointer;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #2b2832;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:black;
+  color: white;
+  margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+<!--NAVBAR --> 
+   
+  <header> 
+            <a class="logo"  href="index.html"><img src="Image/image.png" alt="logo"></a>
+            <nav  class="menu-bar">
+                <ul class="nav__links">
+                    <li><a href="Detalii.html">Despre</a></li>
+
+
+                     <li><a href="LHO.html">Let's Hang Out </a>
+
+           
+                    </li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="Contact.html">Contact</a>
+            <p class="menu cta">Menu</p>
+</header>
+
+<div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="Detalii.html">Despre</a>
+                <a href="LHO.html">Let's Hang Out</a>
+                <a href="Galerie.html">Galerie</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="Script1.js"></script>
+
+<!--NAVBAR -->
+
+ <img src="Image/mazo-fotor-bg-remover-20230605194642.png" height="150px" width="150px">
+<main>
+<div class="container">
+<section class="about">
+  <div class="main">
+     <div class="about-text">
+        <h1>MAZO</h1>
+        <h5>Citate motivaționale </h5>
+         <p >“O comunicare buna e un stimulator la fel de bun ca o cafea tare, si la fel de greu sa adormi dupa.” <br><br> "O ceasca de cafea impartita cu un prieten este fericire gustata si timp bine petrecut. Cafeaua este un moment de placere si o aroma."</p>
+      
+         <button type="button" ><a class="button" style="color:white;" href="https://www.facebook.com/mazocoffee/?locale=ro_RO">Facebook</a></button> <button type="button" >  <a class="button" style="color:black;" href="https://www.instagram.com/mazo_coffee/">Instagram</a></button> <button type="button" ><a class="button" style="color:white;" href="https://ro.sluurpy.com/baia-mare/restaurant/6047624/mazo">Recenzii</a></button>
+         <br><br>
+
+         <hr><br>
+			<h5>- Locație -</h5>
+			<p>Adresa: Bulevardul Independentei 4A, Baia Mare 430123<br>Telefon: 0754 361 906</p>
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.299396773583!2d23.565919215510167!3d47.65917987918824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dc42ec449b5d%3A0x4cb8bfabcfb3fbbd!2sMAZO!5e0!3m2!1sro!2sro!4v1677358000878!5m2!1sro!2sro" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+		
+         <hr><br>   
+         <h5>- Etichete Populare -</h5>	
+		<div class="tags">
+			<p class="tag">Cafenea</p> <p class="tag">Socializare</p>
+			<p class="tag">Hipiot</p> <p class="tag">Good-vibes</p> <p class="tag">Tineret</p>
+		</div>
+       <br> 
+
+    </div>
+  </div>
+</section>
+</div>
+</main>
+
+<footer>
+	<p>COPYRIGHT &copy; 2024 LIVE A LITTLE - Atestat Informatica Talpoș Berindan Larisa 12C </p>
+</footer>
+
+</body>
+</html>

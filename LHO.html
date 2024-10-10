@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> 
+	LIVE A LITTLE 
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="Shortcut Icon" type="image/png" href="Image/logo.jpeg" >
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<style>
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    color: white;
+    font-weight: 400;
+    background: #1f1f1f;
+}
+a{
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container{
+    width: 100%;
+    padding-right:15px ;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.section-title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 45px 0 30px 0;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background: #eeeeee;
+}
+.effect{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.effect .effect-img{
+    font-size: 0;
+    overflow: hidden;
+}
+.effect .effect-img img{
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+.effect:hover .effect-img img{
+    transform: scale(1.2);
+}
+.effect .effect-text{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.effect .effect-text .inner{
+    position: absolute;
+    padding: 15px;
+    z-index: 1;
+}
+.effect .effect-text:before,
+.effect .effect-text:after{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+.effect .effect-text:before{
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    left: -100%;
+    top: 0;
+}
+.effect .effect-text:after{
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    left: 100%;
+    bottom: 0;
+}
+.effect:hover .effect-text{
+    opacity: 1;
+}
+.effect:hover .effect-text:after,
+.effect:hover .effect-text:before{
+    animation-delay: .1s;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.effect:hover .effect-text:after{
+    animation-name: left-up;
+}
+.effect:hover .effect-text:before{
+    animation-name: right-dn;
+}
+@-webkit-keyframes left-up {
+    0% {
+        left: 100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+@-webkit-keyframes right-dn {
+    0% {
+        left: -100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+.effect .effect-text h2{
+    height: 45px;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+.effect .effect-text p{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.effect .effect-btn .btn{
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+}
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+    .column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    .column{
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+/* FOOTER */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'PT Serif', serif;
+}
+
+.tag {
+  background-color: #2b2832;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+    font-family: 'PT Serif', serif;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:black;
+  color: white;
+  margin: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!--NAVBAR --> 
+   
+  <header> 
+            <a class="logo"  href="index.html"><img src="Image/image.png" alt="logo"></a>
+            <nav  class="menu-bar">
+                <ul class="nav__links">
+                    <li><a href="Detalii.html">Despre</a></li>
+
+
+                     <li><a href="LHO.html">Let's Hang Out </a>
+
+           
+                    </li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="Contact.html">Contact</a>
+            <p class="menu cta">Menu</p>
+</header>
+
+<div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="Detalii.html">Despre</a>
+                <a href="LHO.html">Let's Hang Out</a>
+                <a href="Galerie.html">Galerie</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="Script1.js"></script>
+
+<!--NAVBAR -->
+
+<div class="container">
+        <div class="section-title">
+            <h1>- Let's Hang Out -</h1>
+         <br>
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+                
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Image/deis.png" alt="deis.img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Asociatia DEIS</h2>
+                            <p>Asociatia "DEIS" se distinge de restul asociașiilor din BM prin prezența diferitelor grupe sociale, colectivul primitor și o adevărată familie formată din oameni talentați.</p>
+                            <div class="effect-btn">
+                                <a href="DEIS.html" class="btn"><i class="fa fa-eye"></i> vezi detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Image/mazo.jpg" alt="mazo.img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>MAZO</h2>
+                            <p>"Mazo" este o cafenea îndrăgită de toate categoriile de vârstă având un vibe plăcut și primitor, fiind un loc ideal pentru o cafea bună și un moment de recreare.</p>
+                            <div class="effect-btn">
+                                <a href="MAZO.html" class="btn"><i class="fa fa-eye"></i> vezi detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Image/shadows.jpg" alt="shadows.img">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>SHADOWS ROCK</h2>
+                            <p>Cunoscut de către băimăreni drept "Shadows" este un bar îndrăgit de metaliști, fiind un loc atât pentru recreere și o poveste bună, cât și pentru un concert pe cinste.</p>
+                            <div class="effect-btn">
+                                <a href="SHADOWS.html" class="btn"><i class="fa fa-eye"></i> vezi detalii</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- FOOTER -->  
+<footer>
+<h2 style="font-size: 25px;">Suntem deschiși pentru propuneri</h2>
+		 <p style="font-size: 20px;  font-family: 'PT Serif', serif;">Dacă consideri că există și alte locuri pentru socializare<br>și dezvoltare personală în Baia Mare, lasă-ne ideea aici</p>
+<br>
+		 <div class="tags" style="justify-content: center; text-align:center; font-size:25px; padding:0px;">
+			<a class="tag" href="Contact.html">Contact</a> 
+		</div>
+
+<br><hr><br>
+
+	<p>COPYRIGHT &copy; 2024 LIVE A LITTLE - Atestat Informatica Talpoș Berindan Larisa 12C </p>
+</footer>
+
+
+</body>
+</html>
